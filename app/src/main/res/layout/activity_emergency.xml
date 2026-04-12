@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#000000"
+    android:padding="24dp">
+
+    <!-- 🚨 Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🚨 EMERGENCY ALERT ACTIVATED"
+        android:textColor="#FF4444"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- 📞 Calling -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calling Emergency Services..."
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- 🚓 Services -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Police • Ambulance • Fire"
+        android:textColor="#FF8888"
+        android:textSize="18sp"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- ⏳ Loading -->
+    <ProgressBar
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- 📍 Info -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location and ride details have been shared successfully."
+        android:textColor="#CCCCCC"
+        android:textSize="16sp"
+        android:gravity="center"/>
+
+</LinearLayout>

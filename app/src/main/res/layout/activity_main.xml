@@ -1,65 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#5A5A5A">
+
     <LinearLayout
-        android:orientation="vertical"
-        android:padding="24dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
 
         <TextView
-            android:text="SafetyPoint"
-            android:textSize="24sp"
-            android:textStyle="bold"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="SafetyPoint"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
 
         <EditText
             android:id="@+id/rideLinkInput"
-            android:hint="Paste Ride Link Here"
-            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:hint="Paste Ride Link Here"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
 
         <Button
             android:id="@+id/activateButton"
-            android:text="Activate Ride"
-            android:layout_marginTop="16dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="55dp"
+            android:text="Activate Ride"
+            android:backgroundTint="#6A5ACD"
+            android:textColor="#FFFFFF"/>
 
         <TextView
             android:id="@+id/statusText"
-            android:text="Status: Not Active"
-            android:textSize="18sp"
-            android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="Status: Not Active"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
 
         <Button
             android:id="@+id/safeButton"
-            android:text="Safe, but Delayed"
-            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="55dp"
+            android:text="Safe, but Delayed"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"/>
 
         <Button
             android:id="@+id/suspiciousButton"
-            android:text="Suspicious"
-            android:layout_marginTop="12dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="55dp"
+            android:text="Suspicious"
+            android:backgroundTint="#FFC107"
+            android:textColor="#000000"/>
 
         <Button
             android:id="@+id/helpButton"
-            android:text="HELP"
-            android:layout_marginTop="12dp"
-            android:background="#FF0000"
-            android:textColor="#FFFFFF"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="60dp"
+            android:text="HELP"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"/>
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:src="@drawable/taxiiii"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
 
     </LinearLayout>
 
